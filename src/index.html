@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Conference RSVP</title>
+</head>
+<body>
+    <header>
+        <h1>NYC Tech Summit 2026</h1>
+        <p>March 15, 2026 | 9:00 AM - 5:00 PM | Manhattan Conference Center</p>
+    </header>
+    <main>
+        <form>
+            <h2>Event RSVP</h2>
+            <div id="text-boxs">
+                <div>
+                    <label for="name">First Name</label>
+                    <input type="text" name="First Name"/>
+                </div>
+                <div>
+                    <label for="name">Last Name</label>
+                    <input type="text" name="Last Name"/>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" name="Email"/>
+                </div>
+                <div>
+                    <label for="number">Number of Tickets</label>
+                    <input type="text" name="Number of Tickets"/>
+                </div>
+            </div>
+            <p>Lunch Preference</p>
+            <div id="radio">
+                <input type="radio" id="option1" name="choice" value="chicken" />
+                <label for="lunch">Chicken</label>
+
+                <input type="radio" id="option2" name="choice" value="fish" />
+                <label for="lunch">Fish</label>
+
+                <input type="radio" id="option3" name="choice" value="Vegetarian" />
+                <label for="lunch">Vegetarian</label>
+            </div>
+            <p>Select Workshop Sessions (Check all that apply)</p>
+            <div id="checkboxes">
+                <input type="checkbox" id="item1" name="sessions" value="Session 1" />
+                <label for="sessions">Session 1</label>
+
+                <input type="checkbox" id="item2" name="sessions" value="Session 2" />
+                <label for="sessions">Session 2</label>
+
+                <input type="checkbox" id="item3" name="sessions" value="Session 3" />
+                <label for="sessions">Session 3</label>
+
+                <input type="checkbox" id="item4" name="sessions" value="Session 4" />
+                <label for="sessions">Session 4</label>
+
+                <input type="checkbox" id="item5" name="sessions" value="Session 5" />
+                <label for="sessions">Session 5</label>
+            </div>
+            <div>
+                <label for="message">Special Requests or Notes</label>
+<textarea id="message" name="message" placeholder="Dietary restrictions, accessibility needs, questions, etc."></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

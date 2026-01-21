@@ -15,60 +15,73 @@
         <form>
             <h2>Event RSVP</h2>
             <div id="text-boxs">
-                <div>
-                    <label for="name">First Name</label>
-                    <input type="text" name="First Name"/>
+                <div class="text-box">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" required type="text" name="First Name"/>
                 </div>
-                <div>
-                    <label for="name">Last Name</label>
-                    <input type="text" name="Last Name"/>
+                <div class="text-box">
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" required type="text" name="Last Name"/>
                 </div>
-                <div>
+                <div class="text-box">
                     <label for="email">Email</label>
-                    <input type="text" name="Email"/>
+                    <input id="email" required type="text" name="Email"/>
                 </div>
-                <div>
+                <div class="text-box">
                     <label for="number">Number of Tickets</label>
-                    <input type="text" name="Number of Tickets"/>
+                    <input id="number" required type="text" name="Number of Tickets"/>
                 </div>
             </div>
-            <p>Lunch Preference</p>
-            <div id="radio">
-                <input type="radio" id="option1" name="choice" value="chicken" />
-                <label for="lunch">Chicken</label>
-
-                <input type="radio" id="option2" name="choice" value="fish" />
-                <label for="lunch">Fish</label>
-
-                <input type="radio" id="option3" name="choice" value="Vegetarian" />
-                <label for="lunch">Vegetarian</label>
-            </div>
-            <p>Select Workshop Sessions (Check all that apply)</p>
-            <div id="checkboxes">
-                <input type="checkbox" id="item1" name="sessions" value="Session 1" />
-                <label for="sessions">Session 1</label>
-
-                <input type="checkbox" id="item2" name="sessions" value="Session 2" />
-                <label for="sessions">Session 2</label>
-
-                <input type="checkbox" id="item3" name="sessions" value="Session 3" />
-                <label for="sessions">Session 3</label>
-
-                <input type="checkbox" id="item4" name="sessions" value="Session 4" />
-                <label for="sessions">Session 4</label>
-
-                <input type="checkbox" id="item5" name="sessions" value="Session 5" />
-                <label for="sessions">Session 5</label>
-            </div>
-            <div>
+            <fieldset>
+                <legend>Lunch Preference</legend>
+                <div id="radio" class="column-inputs">
+                    <div class="checks-or-radio">
+                        <input required type="radio" id="lunch-chicken" name="choice" value="chicken" />
+                        <label for="lunch-chicken">Chicken</label>
+                    </div>
+                    <div class="checks-or-radio">
+                        <input required type="radio" id="lunch-fish" name="choice" value="fish" />
+                        <label for="lunch-fish">Fish</label>
+                    </div>
+                    <div class="checks-or-radio">
+                        <input required type="radio" id="lunch-vegetarian" name="choice" value="Vegetarian" />
+                        <label for="lunch-vegetarian">Vegetarian</label>
+                </div> </div>
+            </fieldset>
+            <fieldset>
+                <legend>Select Workshop Sessions (Check all that apply)</legend>
+                <div id="checkboxes" class="column-inputs">
+                    <div class="checks-or-radio">
+                        <input type="checkbox" id="item1" name="session1" value="Session 1" />
+                        <label for="session1">Session 1</label>
+                    </div>
+                    <div class="checks-or-radio">
+                        <input type="checkbox" id="item2" name="session2" value="Session 2" />
+                        <label for="session2">Session 2</label>
+                    </div>
+                    <div class="checks-or-radio">
+                        <input type="checkbox" id="item3" name="session3" value="Session 3" />
+                        <label for="session3">Session 3</label>
+                    </div>
+                    <div class="checks-or-radio">
+                        <input type="checkbox" id="item4" name="session4" value="Session 4" />
+                        <label for="session4">Session 4</label>
+                    </div>
+                    <div class="checks-or-radio">
+                        <input type="checkbox" id="item5" name="session5" value="Session 5" />
+                        <label for="session5">Session 5</label>
+                    </div> 
+                </div>
+            </fieldset>
+            <div id="text-area">
                 <label for="message">Special Requests or Notes</label>
-<textarea id="message" name="message" placeholder="Dietary restrictions, accessibility needs, questions, etc."></textarea>
+                <textarea id="message" name="message" placeholder="Dietary restrictions, accessibility needs, questions, etc."></textarea>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">Complete RSVP</button>
         </form>
     </main>
     <footer>
-
+        <p>Copyright &copy; 2026 NYC Tech Summit</p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Conference RSVP</title>
+</head>
+<body>
+    <header>
+        <h1>NYC Tech Summit 2026</h1>
+        <p>March 15, 2026 | 9:00 AM - 5:00 PM | Manhattan Conference Center</p>
+    </header>
+    <main>
+        <form>
+            <h2>Event RSVP</h2>
+            <div id="text-boxs">
+                <div class="text-box">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" required type="text" name="First Name"/>
+                </div>
+                <div class="text-box">
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" required type="text" name="Last Name"/>
+                </div>
+                <div class="text-box">
+                    <label for="email">Email</label>
+                    <input id="email" required type="email" name="Email"/>
+                </div>
+                <div class="text-box">
+                    <label for="number">Number of Tickets</label>
+                    <input id="number" required type="number" name="Number of Tickets" min="1" max="10"/>
+                </div>
+            </div>
+            <fieldset>
+                <legend>Lunch Preference</legend>
+                <div id="radio" class="column-inputs">
+                    <div class="checks-or-radio">
+                        <input required type="radio" id="lunch-chicken" name="choice" value="chicken" />
+                        <label for="lunch-chicken">Chicken</label>
+                    </div>
+                    <div class="checks-or-radio">
+                        <input required type="radio" id="lunch-fish" name="choice" value="fish" />
+                        <label for="lunch-fish">Fish</label>
+                    </div>
+                    <div class="checks-or-radio">
+                        <input required type="radio" id="lunch-vegetarian" name="choice" value="Vegetarian" />
+                        <label for="lunch-vegetarian">Vegetarian</label>
+                </div> </div>
+            </fieldset>
+            <fieldset>
+                <legend>Select Workshop Sessions (Check all that apply)</legend>
+                <div id="checkboxes" class="column-inputs">
+                    <div class="checks-or-radio">
+                        <input type="checkbox" id="item1" name="session1" value="Session 1" />
+                        <label for="session1">Session 1</label>
+                    </div>
+                    <div class="checks-or-radio">
+                        <input type="checkbox" id="item2" name="session2" value="Session 2" />
+                        <label for="session2">Session 2</label>
+                    </div>
+                    <div class="checks-or-radio">
+                        <input type="checkbox" id="item3" name="session3" value="Session 3" />
+                        <label for="session3">Session 3</label>
+                    </div>
+                    <div class="checks-or-radio">
+                        <input type="checkbox" id="item4" name="session4" value="Session 4" />
+                        <label for="session4">Session 4</label>
+                    </div>
+                    <div class="checks-or-radio">
+                        <input type="checkbox" id="item5" name="session5" value="Session 5" />
+                        <label for="session5">Session 5</label>
+                    </div> 
+                </div>
+            </fieldset>
+            <div id="text-area">
+                <label for="message">Special Requests or Notes</label>
+                <textarea id="message" name="message" placeholder="Dietary restrictions, accessibility needs, questions, etc."></textarea>
+            </div>
+            <button type="submit">Complete RSVP</button>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2026 NYC Tech Summit</p>
+    </footer>
+</body>
+</html>
